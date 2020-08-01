@@ -1,0 +1,32 @@
+{
+  "name": "qrzip",
+  "version": "0.0.2",
+  "description": "zip qrcode image in browser",
+  "main": "dist/app.es.js",
+  "scripts": {
+    "build": "rm -rf dist && NODE_ENV=production rollup -c rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sankooc/qrzip.git"
+  },
+  "keywords": [],
+  "author": "sankooc",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@rollup/plugin-babel": "^5.1.0",
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "core-js": "^3.6.5",
+    "less": "^3.12.2",
+    "lodash": "^4.17.19",
+    "rollup": "^2.22.1",
+    "rollup-plugin-terser": "^6.1.0"
+  },
+  "dependencies": {
+    "jszip": "^3.5.0"
+  }
+}
